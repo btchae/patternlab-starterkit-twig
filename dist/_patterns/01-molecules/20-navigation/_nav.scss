@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+nav {
+	overflow: hidden;
+
+	.hamburger {
+		position: relative;
+		z-index: 5;
+
+		@include media(768px) {
+			display: none;
+		}
+	}
+
+	ul {
+		@include padding(50px 100px null null);
+		position: fixed;
+		right: 0;
+		top: 0;
+		list-style: none;
+		border: 1px solid;
+		background-color: white;
+
+		@include media(768px) {
+			position: static;
+			border: none;
+			padding: 0;
+		}
+
+		li {
+			padding: $pad;
+
+			@include media(768px) {
+				display: inline-block;
+				border-top: none
+			}
+		}
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+}
