@@ -1,7 +1,7 @@
 .o__header {
 	background: $header_bg;
 	color: $header_text;
-	border-bottom: 1px solid $header_border;
+	border-bottom: $border-thin solid $header_border;
 
 	.container {
 		max-width: $max-width;

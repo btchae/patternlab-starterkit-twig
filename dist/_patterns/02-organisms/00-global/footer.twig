@@ -1,7 +1,9 @@
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
+<footer class="o__footer" role="contentinfo">
+
 	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+
+		<p class="copyright">{{ options.general_options.general_options_copyright_text | replace({ '%YEAR%':  now|date('Y') }) }}</p>
+
 	</div>
+
 </footer>
-<!-- End Footer -->
