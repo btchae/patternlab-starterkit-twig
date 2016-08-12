@@ -5,10 +5,12 @@
 {% endblock %}
 
 {% block content %}
+    {% include "molecules/hero/hero.twig" %}
+
     {% for layout in post.acf.flexible_content.flexible_content_layouts %}
-        {% if 'image' == layout.acf_fc_layout %}
-            {% include "atoms/images/landscape.twig" with {'img': {'landscape': {'src': layout.image } } }  %}
-        {% elseif 'text' == layout.acf_fc_layout  %}
+        {% if "image" == layout.acf_fc_layout %}
+            {% include "atoms/images/landscape.twig" with {"img": {"landscape": {"src": layout.image } } }  %}
+        {% elseif "text" == layout.acf_fc_layout  %}
             {{ layout.text }}
         {% endif %}
     {% endfor %}
