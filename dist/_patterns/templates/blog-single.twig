@@ -6,4 +6,5 @@
 
 {% block content %}
     {{ post.post_content }}
+    {% include "organisms/comments/disqus.twig" %}
 {% endblock %}
