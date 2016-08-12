@@ -7,9 +7,9 @@
         {% block content %}{% endblock %}
     </main>
 
-    <aside>
+    <aside class="main-aside">
         {% block sidebar %}
-            {#{% include "organisms-recent-tweets" %}#}
+            {{ sidebars.main }}
         {% endblock %}
     </aside>
 {% endblock %}
