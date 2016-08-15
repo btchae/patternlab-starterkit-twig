@@ -1,0 +1,17 @@
+{% extends "templates/layouts/layout-1col.twig" %}
+
+{% block title %}
+    <h1>{{ post.post_title }}</h1>
+{% endblock %}
+
+{% block content %}
+    {% include "molecules/hero/hero.twig" %}
+
+    {% for layout in post.acf.flexible_content.flexible_content_layouts %}
+        {% if "image" == layout.acf_fc_layout %}
+            {% include "atoms/images/landscape.twig" with {"img": {"landscape": {"src": layout.image } } }  %}
+        {% elseif "text" == layout.acf_fc_layout  %}
+            {{ layout.text }}
+        {% endif %}
+    {% endfor %}
+{% endblock %}

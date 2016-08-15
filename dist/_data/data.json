@@ -40,7 +40,7 @@
   "htmlClass": "pl",
   "bodyClass": "body",
   "img": {
-    "ratio_16x9": {
+    "landscape": {
       "src": "../../images/fpo_16x9.png",
       "alt": "A placeholder image"
     },

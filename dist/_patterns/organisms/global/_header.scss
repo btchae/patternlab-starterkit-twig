@@ -1,0 +1,51 @@
+.o__header {
+	background: $header_bg;
+	color: $header_text;
+	border-bottom: $border-thin solid $header_border;
+
+	.container {
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	nav {
+		margin-left: auto;
+	}
+}
+
+//.logo {
+//	float: left;
+//	max-width: 8rem;
+//	margin: 0.4rem;
+//
+//	@include media($tablet) {
+//		max-width: 9rem;
+//	}
+//}
+//
+//.nav-toggle {
+//	float: right;
+//	display: block;
+//	padding: 0.9rem 1rem 0.7rem;
+//	font-size: 1.3rem;
+//	line-height: 1;
+//	border-left: 1px solid #dbdbdb;
+//
+//	@include media($tablet) {
+//		display: none;
+//	}
+//}
+//
+//.search-form {
+//	overflow: hidden;
+//	max-height: 0;
+//
+//	@include media($tablet) {
+//		float: right;
+//		max-height: none;
+//		margin: 0.65em 0.5em 0 0;
+//	}
+//}
