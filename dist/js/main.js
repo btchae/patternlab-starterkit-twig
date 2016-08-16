@@ -1,7 +1,9 @@
-
-
+// First require the base components
 require.context( 'atoms/global/base', true, /^\.\/.*\.(js|scss)/ );
 
-require.context( 'atoms/hamburger', true, /^\.\/.*\.(js|scss)/ );
+// Then all atoms, molecules, etc
+// (for this test we're just including all globals, which will require all except base which is required above)
+require.context( 'atoms/global', true, /^\.\/.*\.(js|scss)/ );
 
-// require('./../_patterns/test/paragraph/_paragraph.scss');
+// Then just for this test we add hamburger as it has a JS script.
+require.context( 'atoms/hamburger', true, /^\.\/.*\.(js|scss)/ );
