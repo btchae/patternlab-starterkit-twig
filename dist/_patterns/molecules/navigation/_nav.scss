@@ -2,6 +2,11 @@
     $NAVIGATION
 \*------------------------------------*/
 
+@import "~bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "~bower_components/neat/app/assets/stylesheets/neat";
+@import "~atoms/importable/params/_spaces.scss";
+@import "~atoms/importable/params/_breakpoints.scss";
+
 nav {
 	overflow: hidden;
 
@@ -9,7 +14,7 @@ nav {
 		position: relative;
 		z-index: 5;
 
-		@include media(768px) {
+		@include media($tablet) {
 			display: none;
 		}
 	}
@@ -23,7 +28,7 @@ nav {
 		border: 1px solid;
 		background-color: white;
 
-		@include media(768px) {
+		@include media($tablet) {
 			position: static;
 			border: none;
 			padding: 0;
@@ -32,7 +37,7 @@ nav {
 		li {
 			padding: $pad;
 
-			@include media(768px) {
+			@include media($tablet) {
 				display: inline-block;
 				border-top: none
 			}
