@@ -1,5 +1,5 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
+var ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+var path = require( 'path' );
 
 module.exports = {
   entry: './js/main.js',
@@ -8,23 +8,23 @@ module.exports = {
     filename: 'js/bundle.js'
   },
   resolve: {
-    extensions: ['', '.js', 'css', 'scss'],
+    extensions: [ '', '.js', 'css', 'scss' ],
     modulesDirectories: [
-      path.join(__dirname),
-      path.join(__dirname + '/_patterns'),
-      path.join(__dirname + '/_patterns/atoms/importable')
+      path.join( __dirname ),
+      path.join( __dirname + '/_patterns' ),
+      path.join( __dirname + '/_patterns/atoms/importable' )
     ]
   },
   module: {
     loaders: [
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass')
+        loader: ExtractTextPlugin.extract( 'style', 'css!sass' )
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('css/style.css')
+    new ExtractTextPlugin( 'css/style.css' )
   ]
   // , sassLoader: {
   //   includePaths: [
