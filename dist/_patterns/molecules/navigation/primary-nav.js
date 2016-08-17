@@ -1,16 +1,14 @@
-module.exports = {
+module.exports = function() {
 
-  hamburger: document.querySelector( '.m__primary-nav .a__hamburger' ),
+  const hamburger = document.querySelector( '.m__primary-nav .a__hamburger' );
 
-  menu: document.querySelector( '.m__primary-nav .main-nav' ),
+  const menu = document.querySelector( '.m__primary-nav .main-nav' );
 
-  init: function() {
-    this.hamburger.onclick = this.toggle.bind( this );
-  },
+  hamburger.onclick = toggle;
 
-  toggle: function() {
-    this.hamburger.classList.toggle( 'is-active' );
-    this.menu.classList.toggle( 'is-active' );
+  function toggle() {
+    const activeClass = 'is-active';
+    hamburger.classList.toggle( activeClass );
+    menu.classList.toggle( activeClass );
   }
-
 };
