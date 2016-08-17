@@ -1,0 +1,19 @@
+@import '~params/spaces';
+
+ol, ul {
+	margin: 0;
+}
+
+/* Definition Lists */
+dl {
+	overflow: hidden;
+	margin: 0 0 $space;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}

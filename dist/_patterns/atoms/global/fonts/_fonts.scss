@@ -1,0 +1,13 @@
+@import '~params/fonts';
+@import '~params/colors';
+
+body {
+  background: $background;
+  font: 100%/1.5 $font;
+  -webkit-text-size-adjust: 100%;
+  color: $text;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}

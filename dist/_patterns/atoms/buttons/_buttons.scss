@@ -1,0 +1,40 @@
+@import '~params/colors';
+
+.a__btn {
+  width: 255px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &__primary {
+    color: $button_primary_text;
+    background-color: $button_primary_bg;
+
+    &:hover {
+      color: $button_primary_text_hover;
+      background-color: $button_primary_bg_hover;
+    }
+
+    &:disabled {
+      color: $button_primary_text_disabled;
+      background-color: $button_primary_bg_disabled;
+    }
+  }
+
+  &__secondary {
+
+  }
+
+  &__tertiary {
+
+  }
+
+  &__text {
+
+  }
+}
