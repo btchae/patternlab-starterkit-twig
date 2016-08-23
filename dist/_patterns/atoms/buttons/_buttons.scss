@@ -6,8 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 
-  &:disabled {
+  &[disabled] {
     cursor: not-allowed;
   }
 
@@ -20,21 +21,71 @@
       background-color: $button_primary_bg_hover;
     }
 
-    &:disabled {
+    &:active, &:focus {
+      color: $button_primary_text_active;
+      background-color: $button_primary_bg_active;
+    }
+
+    &[disabled] {
       color: $button_primary_text_disabled;
       background-color: $button_primary_bg_disabled;
     }
   }
 
   &__secondary {
+    color: $button_secondary;
+    border: solid 1px $button_secondary;
 
+    &:hover {
+      color: $button_secondary_hover;
+      border-color: $button_secondary_hover;
+    }
+
+    &:active, &:focus {
+      color: $button_secondary_active;
+      border-color: $button_secondary_active;
+    }
+
+    &[disabled] {
+      color: $button_secondary_disabled;
+      border-color: $button_secondary_disabled;
+    }
   }
 
   &__tertiary {
+    color: $button_tertiary_text;
+    border: solid 1px $button_tertiary_text;
 
+    &:hover {
+      color: $button_tertiary_text;
+      background-color: $button_tertiary_hover;
+    }
+
+    &:active, &:focus {
+      color: $button_tertiary_text;
+      background-color: $button_tertiary_active;
+    }
+
+    &[disabled] {
+      color: $button_tertiary_disabled;
+      border-color: $button_tertiary_disabled;
+    }
   }
 
   &__text {
+    color: $button_text;
 
+    &:hover {
+      color: $button_text_hover;
+    }
+
+    &:active, &:focus {
+      color: $button_text_active;
+    }
+
+    &[disabled] {
+      color: $button_text_disabled;
+      cursor: not-allowed;
+    }
   }
 }
