@@ -1,7 +1,18 @@
 @import '~params/spaces';
 
 ol, ul {
-	margin: 0;
+	margin: 0 0 0 $space;
+	list-style-position: inside;
+}
+
+ol {
+	ol {
+		list-style-type: lower-latin;
+
+		ol {
+			list-style-type: lower-roman;
+		}
+	}
 }
 
 /* Definition Lists */
