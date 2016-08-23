@@ -8,6 +8,7 @@ img {
     &__avatar {
       border-radius: 50%;
       background-color: $img_avatar_bg;
+      max-width: 150px;
     }
 
     &__landscape {
