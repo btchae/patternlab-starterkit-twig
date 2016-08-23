@@ -39,6 +39,7 @@ $_overlay_light: rgba( #414141, .65 );
 $text: $_gray_24;
 $heading: $_gray_24;
 $background: $_white;
+$opposite_bg: $_gray_24;
 
 // Blockquote
 $blockquote_text: $_gray_mid;
@@ -67,27 +68,31 @@ $link_hover: $_brand_secondary;
 
 // Button: Primary
 $button_primary_text: $_white;
-$button_primary_bg: $_brand_primary;
-$button_primary_text_hover: $_brand_primary;
-$button_primary_bg_hover: $_white;
+$button_primary_bg: $_brand_secondary;
+$button_primary_text_hover: $_white;
+$button_primary_bg_hover: $_brand_tertiary;
+$button_primary_text_active: $_white;
+$button_primary_bg_active: $_brand_primary;
 $button_primary_text_disabled: $_white;
 $button_primary_bg_disabled: $_gray_mid;
 
 // Button: Secondary
-$button_secondary_text: $_white;
-$button_secondary_bg: $_brand_primary;
-$button_secondary_text_hover: $_brand_primary;
-$button_secondary_bg_hover: $_white;
-$button_secondary_text_disabled: $_white;
-$button_secondary_bg_disabled: $_gray_mid;
+$button_secondary: $_brand_secondary;
+$button_secondary_hover: $_brand_tertiary;
+$button_secondary_active: $_brand_primary;
+$button_secondary_disabled: $_gray_mid;
 
 // Button: Tertiary
 $button_tertiary_text: $_white;
-$button_tertiary_bg: $_brand_primary;
-$button_tertiary_text_hover: $_brand_primary;
-$button_tertiary_bg_hover: $_white;
-$button_tertiary_text_disabled: $_white;
-$button_tertiary_bg_disabled: $_gray_mid;
+$button_tertiary_hover: $_gray_mid;
+$button_tertiary_active: $_gray_mid;
+$button_tertiary_disabled: $_gray_mid;
+
+// Button: Text
+$button_text: $_brand_secondary;
+$button_text_hover: $_brand_tertiary;
+$button_text_active: $_brand_primary;
+$button_text_disabled: $_gray_mid;
 
 // Forms
 $form_error: $_error;
