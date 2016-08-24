@@ -1,0 +1,10 @@
+@import "~params/colors";
+
+body {
+  background: $background;
+}
+
+main[role="main"] {
+  max-width: 1280px;
+  margin: 0 auto;
+}
