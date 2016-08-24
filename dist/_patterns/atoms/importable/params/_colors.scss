@@ -37,6 +37,7 @@ $_overlay_light: rgba( #414141, .65 );
 
 // Defaults
 $text: $_gray_24;
+$headings: $_black;
 $heading: $_gray_24;
 $background: $_white;
 $opposite_bg: $_gray_24;
@@ -102,3 +103,7 @@ $form_input_border: $_gray_mid;
 
 // Images
 $img_avatar_bg: $_white_smoke;
+
+// Hero
+$hero_text: $_white;
+$hero_text_bg: $_overlay_dark;
