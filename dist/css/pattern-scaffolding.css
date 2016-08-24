@@ -53,6 +53,11 @@
   line-height: 1;
 }
 
+.sg-pattern-example {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .patternLink {
   color: #333333;
   text-transform: capitalize;
