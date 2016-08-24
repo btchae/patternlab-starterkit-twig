@@ -74,6 +74,7 @@
 
   &__text {
     color: $button_text;
+    font-weight: bold;
 
     &:hover {
       color: $button_text_hover;
