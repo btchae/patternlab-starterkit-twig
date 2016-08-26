@@ -3,7 +3,7 @@
 {% block content %}
 
     {% if post.acf.hero.hero_visible %}
-        {% include "molecules/hero/hero.twig" with { "hero": post.acf.hero } %}
+        {% include "molecules/blocks/hero.twig" with { "hero": post.acf.hero } %}
     {% endif %}
 
     {% for layout in post.acf.flexible_content.flexible_content_layouts %}
