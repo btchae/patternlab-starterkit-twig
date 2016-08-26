@@ -1,12 +1,14 @@
 @import "~params/spaces";
 @import "~params/colors";
 
-.m__footer-nav {
+.m__pagination {
   overflow: hidden;
+  padding: $pad 0;
 
   li {
-    padding: $pad;
+    padding: 0 $pad;
     display: inline-block;
+    border-right: 1px solid $pagination_separator;
 
     &:first-child {
       padding-left: 0;
@@ -14,14 +16,19 @@
 
     &:last-child {
       padding-right: 0;
+      border-right: none;
     }
   }
 
   a {
-    color: $nav_link;
+    color: $pagination_inactive;
 
     &:hover {
-      color: $nav_hover;
+      color: $pagination_hover;
     }
+  }
+
+  span {
+    color: $pagination_active;
   }
 }
