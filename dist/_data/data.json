@@ -28,6 +28,22 @@
           "title": "Sample Page"
         }
       ]
+    },
+    "footer_menu": {
+      "get_items": [
+        {
+          "get_link": "/",
+          "title": "Legal"
+        },
+        {
+          "get_link": "/",
+          "title": "Terms"
+        },
+        {
+          "get_link": "/",
+          "title": "Support"
+        }
+      ]
     }
   },
   "post": {
@@ -41,6 +57,44 @@
       "permalink": "http://example.com/link-to-my-post"
     }
   },
+  "pagination": {
+    "pages": [
+      {
+        "link": "http://example.com/1",
+        "title": "1"
+      },
+      {
+        "title": "2"
+      },
+      {
+        "link": "http://example.com/3",
+        "title": "3"
+      },
+      {
+        "link": "http://example.com/4",
+        "title": "4"
+      },
+      {
+        "link": "http://example.com/5",
+        "title": "5"
+      },
+      {
+        "link": "http://example.com/6",
+        "title": "6"
+      },
+      {
+        "link": "http://example.com/7",
+        "title": "7"
+      }
+    ],
+    "prev": {
+      "link": "http://example.com/prev"
+    },
+    "next": {
+      "link": "http://example.com/next"
+    }
+  },
+
   "title": "Pattern Lab",
   "htmlClass": "pl",
   "bodyClass": "body",
