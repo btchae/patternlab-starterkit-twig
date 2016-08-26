@@ -8,11 +8,6 @@
 	overflow: hidden;
 
 	.a__hamburger {
-		position: fixed;
-		z-index: 5;
-		right: 0;
-		top: 10px;
-
 		@include media($tablet) {
 			display: none;
 		}
