@@ -1,13 +1,10 @@
-/*------------------------------------*\
-    $NAVIGATION
-\*------------------------------------*/
-
 @import "~bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "~bower_components/neat/app/assets/stylesheets/neat";
-@import "~atoms/importable/params/_spaces.scss";
-@import "~atoms/importable/params/_breakpoints.scss";
+@import "~params/spaces";
+@import "~params/breakpoints";
+@import "~params/colors";
 
-nav {
+.m__primary-nav {
 	overflow: hidden;
 
 	.a__hamburger {
@@ -55,6 +52,14 @@ nav {
 				display: inline-block;
 				border-top: none
 			}
+		}
+	}
+
+	a {
+		color: $nav_link;
+
+		&:hover {
+			color: $nav_hover;
 		}
 	}
 

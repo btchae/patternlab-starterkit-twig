@@ -28,6 +28,22 @@
           "title": "Sample Page"
         }
       ]
+    },
+    "footer_menu": {
+      "get_items": [
+        {
+          "get_link": "/",
+          "title": "Legal"
+        },
+        {
+          "get_link": "/",
+          "title": "Terms"
+        },
+        {
+          "get_link": "/",
+          "title": "Support"
+        }
+      ]
     }
   },
   "post": {
