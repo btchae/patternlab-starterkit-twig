@@ -1,5 +1,5 @@
 {
-  "description": "Starter kit for patternlab",
+  "description": "Starter kit for Pattern Lab",
   "devDependencies": {
     "css-loader": "^0.23.1",
     "eslint": "^3.4.0",
