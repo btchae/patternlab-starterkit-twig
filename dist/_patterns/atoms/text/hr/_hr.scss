@@ -2,8 +2,8 @@
 @import '~params/colors';
 
 hr {
+  margin: $space-double 0;
   border: 0;
   height: 2px;
   background: $hr;
-  margin: $space-double 0;
 }

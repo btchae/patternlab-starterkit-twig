@@ -4,24 +4,24 @@
 @import '~params/breakpoints';
 
 .o__header {
-	background: $header_bg;
-	color: $header_text;
-	border-bottom: $border-thin solid $header_border;
+  background: $header_bg;
+  color: $header_text;
+  border-bottom: $border-thin solid $header_border;
 
-	.container {
-		max-width: $max-width;
-		margin: 0 auto;
-		padding: 10px;
-		display: flex;
-		align-items: center;
-	}
+  .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: $max-width;
+    padding: 10px;
+  }
 
-	nav {
-		margin-left: auto;
-	}
+  nav {
+    margin-left: auto;
+  }
 
-	.a__hamburger {
-		position: relative;
-		z-index: 5;
-	}
+  .a__hamburger {
+    position: relative;
+    z-index: 5;
+  }
 }

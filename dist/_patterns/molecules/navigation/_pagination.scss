@@ -1,13 +1,13 @@
-@import "~params/spaces";
-@import "~params/colors";
+@import '~params/spaces';
+@import '~params/colors';
 
 .m__pagination {
   overflow: hidden;
   padding: $pad 0;
 
   li {
-    padding: 0 $pad;
     display: inline-block;
+    padding: 0 $pad;
     border-right: 1px solid $pagination_separator;
 
     &:first-child {
