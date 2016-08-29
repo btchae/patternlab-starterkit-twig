@@ -1,12 +1,12 @@
-@import "~params/spaces";
-@import "~params/colors";
+@import '~params/spaces';
+@import '~params/colors';
 
 .m__footer-nav {
   overflow: hidden;
 
   li {
-    padding: $pad;
     display: inline-block;
+    padding: $pad;
 
     &:first-child {
       padding-left: 0;
