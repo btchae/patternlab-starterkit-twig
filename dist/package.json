@@ -2,6 +2,7 @@
   "description": "Starter kit for patternlab",
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "eslint": "^3.4.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^3.8.0",
     "sass-lint": "^1.9.1",
@@ -16,7 +17,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --watch",
-    "styles:lint": "sass-lint _patterns/\\*\\*/\\*.scss -v -q"
+    "styles:lint": "sass-lint _patterns/\\*\\*/\\*.scss -v -q",
+    "js:lint": "eslint _patterns/\\*\\*/\\*.js && eslint js/main.js"
   },
   "repository": {
     "type": "git",
