@@ -68,12 +68,9 @@ $link: $_brand_primary;
 $link_hover: $_brand_secondary;
 
 // Nav
-$nav_link: $_brand_tertiary;
+$nav_inactive: $_gray_mid;
+$nav_active: $_brand_tertiary;
 $nav_hover: $_brand_secondary;
-$pagination_active: $nav_link;
-$pagination_inactive: $_gray_mid;
-$pagination_hover: $nav_hover;
-$pagination_separator: $pagination_inactive;
 
 // Button: Primary
 $button_primary_text: $_white;

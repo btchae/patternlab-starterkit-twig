@@ -18,10 +18,14 @@
   }
 
   a {
-    color: $nav_link;
+    color: $nav_inactive;
 
     &:hover {
       color: $nav_hover;
+    }
+
+    &.current-menu-item {
+      color: $nav_active;
     }
   }
 }

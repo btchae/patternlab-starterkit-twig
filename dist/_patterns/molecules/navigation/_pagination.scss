@@ -8,7 +8,7 @@
   li {
     padding: 0 $pad;
     display: inline-block;
-    border-right: 1px solid $pagination_separator;
+    border-right: 1px solid $nav_inactive;
 
     &:first-child {
       padding-left: 0;
@@ -21,14 +21,14 @@
   }
 
   a {
-    color: $pagination_inactive;
+    color: $nav_inactive;
 
     &:hover {
-      color: $pagination_hover;
+      color: $nav_hover;
     }
   }
 
   span {
-    color: $pagination_active;
+    color: $nav_active;
   }
 }

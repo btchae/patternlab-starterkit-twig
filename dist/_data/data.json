@@ -17,7 +17,8 @@
         },
         {
           "get_link": "/",
-          "title": "About"
+          "title": "About",
+          "class": "current-menu-item"
         },
         {
           "get_link": "/",
@@ -37,7 +38,8 @@
         },
         {
           "get_link": "/",
-          "title": "Terms"
+          "title": "Terms",
+          "class": "current-menu-item"
         },
         {
           "get_link": "/",
