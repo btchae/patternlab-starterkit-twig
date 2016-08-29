@@ -1,6 +1,11 @@
-<ul class="nav-footer">
-	<li><a href="{{ url }}">Home</a></li>
-	<li><a href="{{ url }}">About</a></li>
-	<li><a href="{{ url }}">Blog</a></li>
-	<li><a href="{{ url }}">Contact</a></li>
-</ul>
+<nav class="m__footer-nav">
+
+	<ul>
+		{% for item in menus.footer_menu.get_items %}
+			<li class="nav-item {{item.classes | join(' ')}}">
+				<a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+</nav>
