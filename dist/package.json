@@ -15,6 +15,7 @@
   },
   "private": false,
   "scripts": {
+    "install": "bower install",
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --watch",
     "lint": "npm run styles:lint -s && npm run js:lint -s",
