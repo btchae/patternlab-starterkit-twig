@@ -4,9 +4,14 @@
 .m__footer-nav {
   overflow: hidden;
 
+  ul {
+    margin: 0;
+  }
+
   li {
-    padding: $pad;
+    padding: $pad-half $pad;
     display: inline-block;
+    text-transform: uppercase;
 
     &:first-child {
       padding-left: 0;

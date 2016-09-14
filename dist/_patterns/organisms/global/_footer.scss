@@ -1,18 +1,69 @@
+@import "~bower_components/neat/app/assets/stylesheets/neat";
 @import '~params/colors';
 @import '~params/spaces';
 @import '~params/borders';
+@import '~params/breakpoints';
 
 .o__footer {
-  clear: both;
-  overflow: hidden;
   background: $footer_bg;
   color: $footer_text;
-  line-height: 1.2;
-  border-top: $border-thin solid $footer_border;
-  margin-top: $space;
+
+  .container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+
+    @include media($desktop) {
+      padding: 45px 60px 10px 60px;
+    }
+
+    .cols {
+      @include media($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col {
+        margin: 15px 0;
+
+        @include media($desktop) {
+          width: 20%;
+        }
+
+        &:first-child,
+        &:last-child {
+          @include media($desktop) {
+            width: 40%;
+          }
+        }
+
+        &:first-child {
+          @include media($desktop) {
+            text-align: left;
+          }
+        }
+
+        &:last-child {
+          @include media($desktop) {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+  }
+
+  nav {
+    li {
+      a {
+        color: $footer_text;
+      }
+    }
+  }
 
   .copyright {
-    margin-top: $space;
-    text-align: center;
+    color: $footer_copyright_text;
+    width: 100%;
   }
 }
