@@ -1,4 +1,4 @@
-@import "~bower_components/neat/app/assets/stylesheets/neat";
+@import '~bower_components/neat/app/assets/stylesheets/neat';
 @import '~params/colors';
 @import '~params/spaces';
 @import '~params/borders';
@@ -9,8 +9,8 @@
   color: $footer_text;
 
   .container {
-    max-width: $max-width;
     margin: 0 auto;
+    max-width: $max-width;
     padding: 10px;
     text-align: center;
 

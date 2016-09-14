@@ -9,8 +9,8 @@
   }
 
   li {
-    padding: $pad-half $pad;
     display: inline-block;
+    padding: $pad-half $pad;
     text-transform: uppercase;
 
     &:first-child {
