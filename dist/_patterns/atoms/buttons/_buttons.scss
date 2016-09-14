@@ -1,11 +1,11 @@
 @import '~params/colors';
 
 .a__btn {
-  width: 255px;
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 255px;
+  height: 45px;
   text-transform: uppercase;
 
   &[disabled] {

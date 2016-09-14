@@ -1,8 +1,8 @@
-@import "~bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "~bower_components/neat/app/assets/stylesheets/neat";
-@import "~params/spaces";
-@import "~params/breakpoints";
-@import "~params/colors";
+@import '~bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '~bower_components/neat/app/assets/stylesheets/neat';
+@import '~params/spaces';
+@import '~params/breakpoints';
+@import '~params/colors';
 
 .m__primary-nav {
   overflow: hidden;
@@ -46,7 +46,7 @@
 
       @include media($tablet) {
         display: inline-block;
-        border-top: none
+        border-top: none;
       }
     }
   }
