@@ -5,7 +5,8 @@
   },
   "options": {
     "general_options": {
-      "general_options_logo": "../../images/logo.png"
+      "general_options_logo": "../../images/logo.png",
+      "general_options_copyright_text": "© %YEAR% Lorem ipsum. All rights reserved."
     }
   },
   "menus": {
@@ -17,7 +18,8 @@
         },
         {
           "get_link": "/",
-          "title": "About"
+          "title": "About",
+          "class": "current-menu-item"
         },
         {
           "get_link": "/",
@@ -37,7 +39,8 @@
         },
         {
           "get_link": "/",
-          "title": "Terms"
+          "title": "Terms",
+          "class": "current-menu-item"
         },
         {
           "get_link": "/",
