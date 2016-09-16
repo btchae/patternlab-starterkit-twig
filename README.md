@@ -15,7 +15,7 @@ The Demo StarterKit for Twig requires the following PatternEngine:
 
 This StarterKit can be installed using the following command:
 
-    php core/console --starterkit --install pattern-lab/starterkit-twig-demo
+    php core/console --starterkit --install moxie-lean/patternlab-starterkit-twig
 
 It is recommended that you **do not** install this StarterKit as a dependency for your Pattern Lab project via Composer.
 
