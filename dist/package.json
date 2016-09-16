@@ -25,8 +25,8 @@
   "private": false,
   "scripts": {
     "install": "bower install",
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --watch",
+    "build": "gulp icons && webpack --config webpack.config.js",
+    "watch": "gulp icons:watch && webpack --watch",
     "lint": "npm run styles:lint -s && npm run js:lint -s",
     "styles:lint": "sass-lint _patterns/\\*\\*/\\*.scss -v -q",
     "js:lint": "eslint _patterns/\\*\\*/\\*.js && eslint js/main.js"
