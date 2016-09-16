@@ -27,14 +27,15 @@
       .col {
         margin: 15px 0;
 
-        @include media($desktop) {
-          width: 20%;
+        &.col-regular {
+          @include media($desktop) {
+            flex-basis: 20%;
+          }
         }
 
-        &:first-child,
-        &:last-child {
+        &.col-wide {
           @include media($desktop) {
-            width: 40%;
+            flex-basis: 40%;
           }
         }
 
@@ -55,10 +56,8 @@
   }
 
   nav {
-    li {
-      a {
-        color: $footer_text;
-      }
+    a {
+      color: $footer_text;
     }
   }
 

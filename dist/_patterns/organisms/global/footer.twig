@@ -4,21 +4,21 @@
 
 		<div class="cols">
 
-			<div class="col">
+			<div class="col col-wide">
 				{% include "molecules/navigation/footer-nav.twig" with { menus: { footer_menu : { get_items: menus.main_menu.get_items } }} %}
 			</div>
 
-			<div class="col">
+			<div class="col col-regular">
 				{% include "atoms/images/logo-footer.twig" %}
 			</div>
 
-			<div class="col">
+			<div class="col col-wide">
 				{% include "molecules/navigation/footer-nav.twig" %}
 			</div>
 
 		</div>
 
-		<p class="copyright">{{ options.general_options.general_options_copyright_text | replace({ '%YEAR%': now|date('Y', date_default_timezone_get()) }) }}</p>
+		<p class="copyright">{{ options.general_options.general_options_copyright_text | replace({ '%YEAR%': now|date('Y', 'UTC') }) }}</p>
 
 	</div>
 
