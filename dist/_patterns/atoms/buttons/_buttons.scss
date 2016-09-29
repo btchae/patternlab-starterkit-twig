@@ -69,6 +69,7 @@
     &[disabled] {
       color: $button_tertiary_disabled;
       border-color: $button_tertiary_disabled;
+      background-color: inherit;
     }
   }
 

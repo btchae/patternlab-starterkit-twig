@@ -4,9 +4,14 @@
 .m__footer-nav {
   overflow: hidden;
 
+  ul {
+    margin: 0;
+  }
+
   li {
     display: inline-block;
-    padding: $pad;
+    padding: $pad-half $pad;
+    text-transform: uppercase;
 
     &:first-child {
       padding-left: 0;
@@ -18,10 +23,14 @@
   }
 
   a {
-    color: $nav_link;
+    color: $nav_inactive;
 
     &:hover {
       color: $nav_hover;
+    }
+
+    &.current-menu-item {
+      color: $nav_active;
     }
   }
 }
