@@ -1,4 +1,4 @@
-require( 'es6-promise' ).polyfill();
+var webpack = require( 'webpack' );
 var ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 var path = require( 'path' );
 
@@ -25,14 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin( 'css/style.css' )
+    new ExtractTextPlugin( 'css/style.css' ),
+    new webpack.optimize.UglifyJsPlugin()
   ]
-  // , sassLoader: {
-  //   includePaths: [
-  //     path.resolve(__dirname, "./bower_components"),
-  //     path.resolve(__dirname, "./_patterns/atoms"),
-  //     path.resolve(__dirname, "./_patterns/molecules"),
-  //     path.resolve(__dirname, "./_patterns/organisms"),
-  //   ]
-  // }
 };
